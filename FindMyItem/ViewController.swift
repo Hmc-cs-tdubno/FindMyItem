@@ -23,9 +23,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func add_item_connect(_ sender: Any) {
+        add_item.isHidden = false
+    }
+    
     
     @IBAction func SubmitNew(_ sender: Any) {
         UserDefaults.standard.set(Priority.value, forKey: itemName.text!)
+         add_item.isHidden = true
     }
+   
 }
 
