@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var itemName: UITextField!
+    @IBOutlet weak var Priority: UISlider!
     @IBOutlet weak var add_item: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +22,10 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    @IBOutlet weak var Priority: UISlider!
     
+    
+    @IBAction func SubmitNew(_ sender: Any) {
+        UserDefaults.standard.set(Priority.value, forKey: itemName.text!)
+    }
 }
 

@@ -45,6 +45,14 @@
                                         <rect key="frame" x="61" y="146" width="118" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </slider>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWG-nT-BmS">
+                                        <rect key="frame" x="87" y="200" width="49" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Submit"/>
+                                        <connections>
+                                            <action selector="SubmitNew:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YHP-D4-wjo"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -55,6 +63,7 @@
                     <connections>
                         <outlet property="Priority" destination="jgP-Ag-67c" id="EWF-Nd-RE3"/>
                         <outlet property="add_item" destination="E7A-Ep-182" id="omN-u7-Xph"/>
+                        <outlet property="itemName" destination="GsD-p6-bf7" id="fMq-Ch-NL4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

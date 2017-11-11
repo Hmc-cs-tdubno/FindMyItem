@@ -47,6 +47,7 @@
 		581110DC1FB6B54D00A1B8B5 /* FindMyItemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyItemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		581110E01FB6B54D00A1B8B5 /* FindMyItemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyItemUITests.swift; sourceTree = "<group>"; };
 		581110E21FB6B54D00A1B8B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A936DBE1FB6B7CA001E08DE /* FindMyItem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FindMyItem.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		581110BF1FB6B54C00A1B8B5 /* FindMyItem */ = {
 			isa = PBXGroup;
 			children = (
+				9A936DBE1FB6B7CA001E08DE /* FindMyItem.entitlements */,
 				581110C01FB6B54C00A1B8B5 /* AppDelegate.swift */,
 				581110C21FB6B54C00A1B8B5 /* ViewController.swift */,
 				581110C41FB6B54C00A1B8B5 /* Main.storyboard */,
@@ -194,6 +196,11 @@
 					581110BC1FB6B54C00A1B8B5 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					581110D01FB6B54D00A1B8B5 = {
 						CreatedOnToolsVersion = 9.1;
